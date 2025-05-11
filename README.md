@@ -83,4 +83,4 @@ Diseño basado en [Adobe XD mockup](https://xd.adobe.com/view/feafd6f3-3f73-47c1
 
 ## 📸 App funcional 
 
-
+https://github.com/user-attachments/assets/530a7ecd-802a-4883-8b2b-b65be6da2a7a
