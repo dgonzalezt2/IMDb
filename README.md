@@ -33,21 +33,13 @@ Esta es una aplicación de películas desarrollada en **Android Studio** utiliza
 - Pantalla de **búsqueda** con filtro por nombre y resultados obtenidos desde TMDB  
 - **Diagrama de arquitectura** incluido en la documentación del proyecto  
 
-### Proyecto Avanzado
+### Detalles como:
 
 - Pantalla de **inicio** mostrando:
   - La película más popular en destaque  
   - Carrusel de películas populares (excluyendo la destacada)  
   - Carrusel de mejores calificadas  
-- Pantalla de **perfil de usuario** mostrando:
-  - Información del usuario  
-  - Lista de seguimiento (con Room)  
-  - Historial de últimas 10 películas vistas (las primeras 3 visibles con opción "ver más")  
 - Pantalla de **detalle** mostrando información y recomendaciones basadas en la película  
-- **Deep Links** para navegar directamente a detalle o perfil (opcional)  
-- **Flavors** para cambiar temas y películas similares (opcional)  
-- **Bitrise CI** (opcional)  
-
 ---
 
 ## 🔗 API e Imágenes
@@ -89,6 +81,6 @@ Diseño basado en [Adobe XD mockup](https://xd.adobe.com/view/feafd6f3-3f73-47c1
 
 ---
 
-## 📸 Capturas de pantalla (opcional)
+## 📸 App funcional 
 
-*Aquí puedes agregar imágenes de la app si deseas mostrar la UI*
+
