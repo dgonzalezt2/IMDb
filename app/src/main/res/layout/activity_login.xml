@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.login.Login"
+    android:background="@color/yellow">
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="169dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/imdb_logo_2016_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usuarioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/usuario"
+        android:textColor="@color/black"
+
+
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoApp" />
+
+    <EditText
+        android:id="@+id/usuario_input"
+        android:layout_width="275dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textColorHint="#707070"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usuarioLabel" />
+
+    <TextView
+        android:id="@+id/contrasenaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/contrase_a"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usuario_input" />
+
+    <EditText
+        android:id="@+id/contrasena_input"
+        android:layout_width="275dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:inputType="textPassword"
+        android:padding="10dp"
+
+        android:textColorHint="#707070"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contrasenaLabel" />
+
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:text="¿olvidaste tu contraseña?"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contrasena_input" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+
+        android:background="@drawable/button_background"
+        android:enabled="false"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contrasena_input"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView
+        android:id="@+id/labelFormasIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="13dp"
+        android:text="O puedes ingresar con"
+        android:textSize="17dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
+
+
+    <LinearLayout
+        android:id="@+id/contenedorIcons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelFormasIngreso"
+        app:layout_constraintVertical_bias="0.087">
+
+        <ImageButton
+            android:id="@+id/button_apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_rounded"
+            android:contentDescription="apple_icon"
+            android:src="@drawable/ic_apple"
+            app:layout_constraintTop_toTopOf="@+id/labelFormasIngreso" />
+
+        <ImageButton
+            android:id="@+id/button_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_rounded"
+            android:contentDescription="facebook_icon"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageButton
+            android:id="@+id/button_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:contentDescription="google_icon"
+            android:src="@drawable/google_ic" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelSinCuneta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="13dp"
+        android:text="¿No tienes Cuenta ?"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contenedorIcons" />
+
+    <TextView
+        android:id="@+id/labelRegistrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="90dp"
+        android:padding="13dp"
+        android:text="Registrate"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelSinCuneta"
+        app:layout_constraintTop_toBottomOf="@+id/contenedorIcons" />
+
+
+    <TextView
+        android:id="@+id/labeInvitado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Continuar como invitado"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/labelSinCuneta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

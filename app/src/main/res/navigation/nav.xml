@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/page_inicio"
+    android:id="@+id/nav">
+    <fragment
+        android:id="@+id/page_inicio"
+        android:name="com.example.katas.presentation.home.InicioFragment"
+        tools:layout="@layout/fragment_inicio">
+        <action
+            android:id="@+id/action_page_inicio_to_page_buscar"
+            app:destination="@id/page_buscar" />
+        <action
+            android:id="@+id/action_page_inicio_to_page_play"
+            app:destination="@id/page_play" />
+        <action
+            android:id="@+id/action_page_inicio_to_page_perfil"
+            app:destination="@id/page_perfil" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/page_buscar"
+        android:name= "com.example.katas.presentation.search.BuscarFragment"
+        tools:layout="@layout/fragment_movies">
+        <action
+            android:id="@+id/action_page_buscar_to_page_inicio"
+            app:destination="@id/page_inicio" />
+        <action
+            android:id="@+id/action_page_buscar_to_page_play"
+            app:destination="@id/page_play" />
+        <action
+            android:id="@+id/action_page_buscar_to_page_perfil"
+            app:destination="@id/page_perfil" />
+        <action
+            android:id="@+id/action_page_buscar_to_page_detail"
+            app:destination="@id/detalleFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.katas.presentation.search.detail.DetailFragment"
+        tools:layout="@layout/fragment_detail"
+
+        >
+        <argument
+            android:name="movieId"
+            app:argType="integer"
+            />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/page_play"
+        android:name="com.example.katas.presentation.play.PlayFragment"
+        tools:layout="@layout/fragment_play">
+    <action
+        android:id="@+id/action_page_play_to_page_inicio"
+        app:destination="@id/page_inicio" />
+    <action
+        android:id="@+id/action_page_play_to_page_buscar"
+        app:destination="@id/page_buscar" />
+    <action
+        android:id="@+id/action_page_play_to_page_perfil"
+        app:destination="@id/page_perfil" />
+
+
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/page_perfil"
+        android:name="com.example.katas.presentation.profile.PerfilFragment"
+        tools:layout="@layout/fragment_perfil"
+        >
+        <action
+            android:id="@+id/action_page_perfil_to_page_inicio"
+            app:destination="@id/page_inicio" />
+        <action
+            android:id="@+id/action_page_perfil_to_page_buscar"
+            app:destination="@id/page_buscar" />
+        <action
+            android:id="@+id/action_page_perfil_to_page_play"
+            app:destination="@id/page_play" />
+
+
+
+    </fragment>
+
+</navigation>

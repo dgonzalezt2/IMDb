@@ -4,7 +4,7 @@ Esta es una aplicación de películas desarrollada en **Android Studio** utiliza
 
 ## 📱 Tecnologías y Arquitectura
 
-- **Jetpack Compose** para la UI moderna y declarativa  
+- **Jetpack Compose Y Layouts(XML)** para la UI moderna y declarativa  
 - **Room** para persistencia local de datos  
 - **Retrofit** para el consumo de APIs  
 - **MVVM & MVI** para el manejo de estados y lógica de presentación  
@@ -29,26 +29,22 @@ Esta es una aplicación de películas desarrollada en **Android Studio** utiliza
   - Mínimo 8 caracteres  
   - Una mayúscula, una minúscula  
   - Un carácter especial y un número  
-  - Verificación de email duplicado  
 - Pantalla de **búsqueda** con filtro por nombre y resultados obtenidos desde TMDB  
-- **Diagrama de arquitectura** incluido en la documentación del proyecto  
 
-### Detalles como:
+
+### La app tiene detalles como:
 
 - Pantalla de **inicio** mostrando:
   - La película más popular en destaque  
   - Carrusel de películas populares (excluyendo la destacada)  
   - Carrusel de mejores calificadas  
-- Pantalla de **detalle** mostrando información y recomendaciones basadas en la película  
+- Buscador **Buscar** mostrando algunas peliculas y con la opcion de buscar peliculas donde al dar click en la imagen muestra **detalle**.
+- Pantalla de **detalle** mostrando información y recomendaciones basadas en la película
 ---
 
 ## 🔗 API e Imágenes
 
-La aplicación usa [TMDB API](https://api.themoviedb.org/3) con la clave pública:
-
-```
-API Key: c5c47722a4adcc77f6e84f28a48b857a
-```
+La aplicación usa [TMDB API](https://api.themoviedb.org/3)
 
 ### Endpoints utilizados
 

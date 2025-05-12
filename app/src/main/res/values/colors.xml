@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorSelected">#000000</color>
+    <color name="colorNoSelected">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#F6C700</color>
+    <color name="grayButtonAndText">#9D9C9C</color>
+    <color name="grayBackground">#00000029</color>
+    <color name="blackButton">#4B4747</color>
+    <color name="gray_shadow">#00000029</color>
+    <color name="gray_line">#f5f5f5</color>
+    <color name="color_barrita">#F5C518</color>
+    <color name="color_separator">#707070</color>
+
+
+</resources>

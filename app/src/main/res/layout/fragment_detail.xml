@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="78dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        tools:context=".presentation.search.detail.DetailFragment">
+
+        <ImageButton
+            android:id="@+id/btnatrasdetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="17dp"
+            android:background="#FFF"
+            android:contentDescription="Back arrow"
+            android:src="@drawable/flecha_atras"
+            app:flow_verticalBias="0.5"
+            app:layout_constraintBottom_toBottomOf="@+id/separatorDetail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTitleOriginal"
+            android:layout_width="116dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="15dp"
+            android:text="Queen Gambit"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btnatrasdetalle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/btnatrasdetalle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/separatorDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/gray_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleOriginal" />
+
+        <ImageView
+            android:id="@+id/barritaDetalle"
+            android:layout_width="6dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/line_barrita"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorDetail" />
+
+        <TextView
+            android:id="@+id/textTitleDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="11dp"
+            android:text="Gambito de dama"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorDetail" />
+
+        <TextView
+            android:id="@+id/textTitleOriginalDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginStart="2dp"
+            android:text="The queens Gambit (Título original)"
+            android:textColor="@color/grayButtonAndText"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/textTitleDetalle"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleDetalle" />
+
+        <TextView
+            android:id="@+id/textDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="4dp"
+            android:text="Miniserie de TV 2020-2020 16"
+            android:textColor="@color/grayButtonAndText"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/textTitleDetalle"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleOriginalDetalle" />
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="396dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gambito_de_dama_portada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/buttonPlay"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_material_play_circle_outline"
+            app:layout_constraintBottom_toBottomOf="@+id/imagePreview"
+            app:layout_constraintEnd_toEndOf="@+id/imagePreview"
+            app:layout_constraintStart_toStartOf="@+id/imagePreview"
+            app:layout_constraintTop_toTopOf="@+id/imagePreview" />
+
+        <ImageView
+            android:id="@+id/Portadadetalle"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/portada_gambito_dama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePreview" />
+
+        <View
+            android:id="@+id/containerGeneros"
+            android:layout_width="53dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_detalle"
+            app:layout_constraintStart_toEndOf="@+id/Portadadetalle"
+            app:layout_constraintTop_toBottomOf="@+id/imagePreview" />
+
+        <TextView
+            android:id="@+id/TextGenre"
+            android:layout_width="53dp"
+            android:layout_height="13dp"
+            android:gravity="center"
+            android:text="Drama"
+            android:textColor="@color/grayButtonAndText"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/containerGeneros"
+            app:layout_constraintEnd_toEndOf="@+id/containerGeneros"
+            app:layout_constraintStart_toStartOf="@+id/containerGeneros"
+            app:layout_constraintTop_toTopOf="@+id/containerGeneros" />
+
+        <ImageView
+            android:id="@+id/star_awesome"
+            android:layout_width="13dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/icon_awesome_star"
+            app:layout_constraintBottom_toBottomOf="@+id/containerGeneros"
+            app:layout_constraintStart_toEndOf="@+id/containerGeneros"
+            app:layout_constraintTop_toTopOf="@+id/containerGeneros" />
+
+        <TextView
+            android:id="@+id/RatingDetalle"
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:text="5.0"
+            android:textColor="@color/grayButtonAndText"
+            app:layout_constraintBottom_toBottomOf="@+id/star_awesome"
+            app:layout_constraintStart_toEndOf="@+id/star_awesome"
+            app:layout_constraintTop_toTopOf="@+id/star_awesome" />
+
+        <TextView
+            android:id="@+id/textOverViewDetail"
+            android:layout_width="216dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            app:layout_constraintTop_toBottomOf="@+id/containerGeneros"
+            app:layout_constraintStart_toEndOf="@+id/Portadadetalle" />
+
+        <View
+            android:id="@+id/separatorDetallesBelow"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/gray_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textOverViewDetail" />
+
+        <ImageView
+            android:id="@+id/barritaDetalleRecomendacion"
+            android:layout_width="6dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/line_barrita"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorDetallesBelow" />
+
+        <TextView
+            android:id="@+id/textRecomendacion"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="11dp"
+            android:text="Recomendaciones"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separatorDetallesBelow" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecomendaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textRecomendacion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

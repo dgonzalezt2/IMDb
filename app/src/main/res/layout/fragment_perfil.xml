@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    tools:context=".presentation.profile.PerfilFragment">
+
+    <TextView
+        android:id="@+id/fotoPerfil"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle_perfil_background"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextNombrePerfil"
+        android:layout_width="95dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="15dp"
+        android:text="David Gonzalez"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/fotoPerfil"
+        app:layout_constraintStart_toEndOf="@+id/fotoPerfil"
+        app:layout_constraintTop_toTopOf="@id/fotoPerfil" />
+
+    <ImageView
+        android:layout_width="19.2dp"
+        android:layout_height="19.2dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/icon_feather_settings"
+        app:layout_constraintBottom_toBottomOf="@+id/TextNombrePerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TextNombrePerfil" />
+
+    <View
+        android:id="@+id/separatorPerfil"
+        android:layout_width="370dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/color_separator"
+        app:layout_constraintStart_toStartOf="@+id/fotoPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/fotoPerfil" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/separatorPerfil"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parentCardview"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@+id/separatorPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/separatorPerfil">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textInfoRecomendaciones"
+                android:layout_width="114dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_perfil_background"
+                android:gravity="start"
+                android:paddingStart="4dp"
+                android:paddingTop="10dp"
+                android:text="Calificar y obtener\nrecomendaciones"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/TextInfoCalidicaciones"
+                android:layout_width="114dp"
+                android:layout_height="13dp"
+                android:text="Calificaciones"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInfoRecomendaciones" />
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="3dp"
+                android:text="0"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/grayButtonAndText"
+                app:layout_constraintStart_toStartOf="@id/TextInfoCalidicaciones"
+                app:layout_constraintTop_toBottomOf="@+id/TextInfoCalidicaciones"
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent2Cardview"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/parentCardview"
+        app:layout_constraintTop_toBottomOf="@+id/separatorPerfil">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textInfoAgregarlistas"
+                android:layout_width="114dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_perfil_background"
+                android:gravity="start"
+                android:paddingStart="4dp"
+                android:paddingTop="10dp"
+                android:text="Agregar a listas "
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/TextInfoListas"
+                android:layout_width="114dp"
+                android:layout_height="13dp"
+                android:text="Calificaciones"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInfoAgregarlistas" />
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="3dp"
+                android:text="4"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/grayButtonAndText"
+                app:layout_constraintStart_toStartOf="@id/TextInfoListas"
+                app:layout_constraintTop_toBottomOf="@+id/TextInfoListas"
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent3Cardview"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/parent2Cardview"
+        app:layout_constraintTop_toBottomOf="@+id/separatorPerfil">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textInfoCriticas"
+                android:layout_width="114dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_perfil_background"
+                android:gravity="start"
+                android:paddingStart="4dp"
+                android:paddingTop="10dp"
+                android:text="Aun no hay criticas "
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/TextInfoComentarios"
+                android:layout_width="114dp"
+                android:layout_height="13dp"
+                android:text="Calificaciones"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInfoCriticas" />
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="3dp"
+                android:text="0"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/grayButtonAndText"
+                app:layout_constraintStart_toStartOf="@id/TextInfoComentarios"
+                app:layout_constraintTop_toBottomOf="@+id/TextInfoComentarios"
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

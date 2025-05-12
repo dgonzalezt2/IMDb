@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+
+        <item name="itemShapeAppearanceOverlay">@null</item>
+        <item name="itemRippleColor">@null</item> <!-- O usa un color personalizado si quieres eliminar el efecto ripple -->
+        <item name="itemIconSize">24dp</item> <!-- Tamaño del ícono si quieres personalizarlo -->
+        <item name="itemFillColor">@color/black</item>
+        <item name="android:statusBarColor">@color/yellow</item>
+    </style>
+</resources>

@@ -1,0 +1,78 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/moviePoster"
+            android:layout_width="120dp"
+            android:layout_height="165dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addToFavorites"
+            android:src="@drawable/duna_poster_oficial" />
+
+        <ImageView
+            android:id="@+id/addToFavorites"
+            android:layout_width="16dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="3dp" />
+
+        <ImageView
+            android:id="@+id/iconRating"
+            android:layout_width="12.31dp"
+            android:layout_height="12.31dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_material_stars"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="7dp"
+            app:layout_constraintTop_toBottomOf="@id/moviePoster" />
+
+        <TextView
+            android:id="@+id/textRating"
+            android:layout_width="18dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/moviePoster"
+            app:layout_constraintStart_toStartOf="@+id/iconRating"
+            android:layout_marginStart="15dp"
+            android:text="4.5"
+            android:textSize="10dp"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/textTitleRating"
+            android:layout_width="96dp"
+            android:layout_height="13dp"
+            app:layout_constraintTop_toBottomOf="@id/iconRating"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:textSize="10dp"
+            android:text="Duna" />
+
+        <ImageView
+            android:layout_width="13.48dp"
+            android:layout_height="13.48dp"
+            app:layout_constraintTop_toBottomOf="@+id/textTitleRating"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/icon_material_info_outline" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

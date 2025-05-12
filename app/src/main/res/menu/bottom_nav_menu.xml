@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/icon_material_home"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/icon_material_search"
+        android:title="Buscar" />
+    <item
+        android:id="@+id/nav_play"
+        android:icon="@drawable/icon_material_play_circle_filled"
+        android:title="Play" />
+    <item
+        android:id="@+id/nav_user"
+        android:icon="@drawable/icon_awesome_user_circle"
+        android:title="David" />
+</menu>
