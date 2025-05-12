@@ -1,4 +1,4 @@
-# 🎬 IMDb - Android App
+# 🎬 IMDb - [Android App](https://appetize.io/app/b_soc3mpcqva2jnt4lx4ypyo3y5i)
 
 Esta es una aplicación de películas desarrollada en **Android Studio** utilizando **Kotlin** y basada en la API de [The Movie DB](https://api.themoviedb.org/3). La app permite explorar películas populares, registrarse, iniciar sesión, consultar detalles y recomendaciones de películas, y más.
 
@@ -81,6 +81,6 @@ Diseño basado en [Adobe XD mockup](https://xd.adobe.com/view/feafd6f3-3f73-47c1
 
 https://github.com/user-attachments/assets/530a7ecd-802a-4883-8b2b-b65be6da2a7a
 
-## Prueba la App
+## 📱 Prueba la App 
 
 La Aplicación está disponible a través de [Appetize](https://appetize.io/app/b_soc3mpcqva2jnt4lx4ypyo3y5i)
