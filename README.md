@@ -73,7 +73,7 @@ Ejemplo: https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg
 
 ## 🎨 Diseño UI
 
-Diseño basado en [Adobe XD mockup](https://xd.adobe.com/view/feafd6f3-3f73-47c1-99d8-f7f11e5f7ac9-abfc/screen/1759965c-25c5-4b09-b4eb-07d1118ee139/)
+Diseño basado en [Adobe XD mockup](https://xd.adobe.com/view/feafd6f3-3f73-47c1-99d8-f7f11e5f7ac9-abfc/)
 
 ---
 
