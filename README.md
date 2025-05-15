@@ -1,4 +1,4 @@
-# 🎬 IMDb - [Android App](https://appetize.io/app/b_soc3mpcqva2jnt4lx4ypyo3y5i)
+# 🎬 IMDb - [Android App](https://appetize.io/app/b_soc3mpcqva2jnt4lx4ypyo3y5i) - Version BETA
 
 Esta es una aplicación de películas desarrollada en **Android Studio** utilizando **Kotlin** y basada en la API de [The Movie DB](https://api.themoviedb.org/3). La app permite explorar películas populares, registrarse, iniciar sesión, consultar detalles y recomendaciones de películas, y más.
 
